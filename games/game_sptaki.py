@@ -29,7 +29,7 @@ class SPTAKIModDataChecker(BasicModDataChecker):
     def __init__(self, patterns: GlobPatterns = GlobPatterns()):
         super().__init__(
             GlobPatterns(
-                valid=["SPT_Data", "BepInEx", "EscapeFromTarkov_Data", "user", "Logs", "Fika*", "*.dll", "*.exe", "*.ini", "*.txt", "*.md", "*.bat", "*.ps1", "*.log"],
-                move={"plugins": "BepInEx/", "patchers": "BepInEx/", "package.json": "user/Mods/", "*": ""},
+                valid=["BepInEx", "EscapeFromTarkov_Data", "SPT", "Logs", "Fika*", "*.dll", "*.exe", "*.ini", "*.txt", "*.md", "*.bat", "*.ps1", "*.log"],
+                move={"*": ""},
             ).merge(patterns),
         )
